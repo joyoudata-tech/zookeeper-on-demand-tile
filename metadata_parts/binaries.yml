@@ -1,0 +1,19 @@
+---
+name: zookeeper-on-demand
+product_version: 0.5.0
+metadata_version: '1.8'
+stemcell_criteria:
+  os: ubuntu-trusty
+  version: '3312'
+  enable_patch_security_updates: true
+
+releases:
+- name: zookeeper
+  file: zookeeper-release-0.0.5.tgz
+  version: 0.0.5
+  md5: f548d73c85fe3ef3a00b5bbec3724335
+  url: http://bosh.io/d/github.com/cppforlife/zookeeper-release?v=0.0.5
+
+provides_product_versions:
+- name: zookeeper-on-demand
+  version: 0.5.0
